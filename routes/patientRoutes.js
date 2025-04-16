@@ -3,7 +3,7 @@ const Patient = require("../models/patient");
 const router = express.Router();
 const twilio = require("twilio");
 require("dotenv").config();
-
+const jwt = require("jsonwebtoken");
 const SECRET_KEY = process.env.JWT_SECRET || "JSK_LUXE";
 
 // ✅ LOGIN - Generate JWT Token
